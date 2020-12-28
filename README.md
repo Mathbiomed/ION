@@ -28,7 +28,7 @@ As described in the article linked above, we developed a computational package, 
       
     4. A .mat file with the regulation-detection scores for each possible self-regulation ('R\_self' variable) and cross-regulation ('R\_cross' variable).
       
-    5. A figure plotting the inferred network structure, inferred_network_graph.fig.  If R_self*(i,j) <* -threshold and |R_cross*(i,j)| >* threshold, then the algorithm infers the interaction from Variable *j* to Variable *i*.  Moreover, if R_cross*(i,j)* is positive (negative), then it is a positive (negative) regulation.
+    5. A figure plotting the inferred network structure, inferred_network_graph.fig.  If R_self(i,j) < -threshold and |R_cross(i,j)| > threshold, then the algorithm infers the interaction from Variable *j* to Variable *i*.  Moreover, if R_cross(i,j) is positive (negative), then it is a positive (negative) regulation.
       
     6. A Final_results.pdf document that reports each output listed above for reference.
     

@@ -1,4 +1,4 @@
-# ION
+# ION (Inferring Oscillatory Networks)
 
 This repository contains the MATLAB implementation and examples of the ION (Inferring Oscillatory Networks) package used in the article: 
 

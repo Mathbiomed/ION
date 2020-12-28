@@ -1,0 +1,84 @@
+
+load('Output/regulation-detection-scores.mat')
+
+%% Inferred Network Graph
+open('Output/inferred_network_graph.fig')
+
+%% Regulation Detection Scores for Self-Regulation
+
+disp(R_self)
+
+%% Regulation Detection scores for across component interactions (column variable acting on row variable)
+
+disp(R_trans)
+
+%% Inferred Interactions
+
+if(sum(abs(R_predicted))==0)
+    fprintf('\nNo interactions reached the threshold level specified.')
+else
+
+    for i = 1:c-1
+
+        for j = 1:c-1
+            
+            if(R_predicted(i,j)==-1)
+
+                fprintf('\n%s negatively regulates %s', ['Variable ' num2str(j)], ['Variable ' num2str(i)]);
+
+            elseif(R_predicted(i,j)==1)
+
+                fprintf('\n%s positively regulates %s', ['Variable ' num2str(j)], ['Variable ' num2str(i)]);
+
+            end
+
+        end
+
+    end
+    
+end
+
+data = load('data.csv');
+[~,c] = size(data);
+
+%% Data figure
+
+open('Output/data.fig')
+
+%% Derivative Figure
+
+open('Output/derivative.fig')
+
+%% Regulation detection functions for self-regulations
+
+for i = 2:c
+
+    for j = 2:c
+    
+        if(i == j)
+            continue;
+            
+        end
+        
+        open(['Output/Reg_dect_', num2str(i-1), '_onto_', num2str(i-1), '_fix_' num2str(j-1) '.fig']);
+        
+    end
+    
+end
+
+%% Regulation detection functions 
+
+for i = 2:c
+    
+    for j = 2:c
+        
+        if(i == j) 
+            continue;
+        end
+
+        open(['Output/Reg_dect_', num2str(j-1), '_onto_', num2str(i-1),'.fig']);
+        
+    end
+    
+end
+

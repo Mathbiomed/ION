@@ -146,6 +146,29 @@ f2 = plot(G2, '.r', 'XData', f1.XData, 'YData', f1.YData, 'MarkerSize', 16, 'Nod
 hold off
 saveas(1, 'Output/inferred_network_graph.fig');
 
+% Calculate the P_XtoY values and plot
+
+P = min(-R_self, abs(R_trans));
+
+P(P<0) = 0;
+
+[s1,s2] = size(P);
+P = reshape(P, s1*s2,1);
+
+P = sort(P, 'descend');
+
+P = P(1:(end-length(diag(R_self))));
+
+figure(2)
+plot(1:length(P), P, 'b.', 'MarkerSize', 14)
+hold on
+plot([1 length(P)], [threshold threshold], 'r--', 'LineWidth', 1)
+hold off
+ylim([0 1])
+saveas(2, 'Output/P_values.fig')
+
+% Save outputs and publish
+
 save('Output/regulation-detection-scores.mat', 'R_self', 'R_trans', 'threshold', 'R_predicted');
 
 publish('Final_results_fourier.m', 'format', 'pdf', 'showCode', false, 'outputDir', 'Output/');

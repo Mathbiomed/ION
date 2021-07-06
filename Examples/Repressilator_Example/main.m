@@ -21,6 +21,8 @@
 % use the findpeaks function in matlab to see all local extrema.  Then, you
 % can refine to get the global max and global min for every period.
 
+clear all; close all;
+
 % Load the regulation_detection_inputs
 
 regulation_detection_inputs;

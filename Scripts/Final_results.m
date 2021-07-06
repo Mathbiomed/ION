@@ -12,6 +12,10 @@ disp(R_self)
 
 disp(R_trans)
 
+%% Open the P values plot
+
+open('Output/P_values.fig')
+
 %% Inferred Interactions
 
 if(sum(abs(R_predicted))==0)

@@ -1,5 +1,11 @@
 %%% Main script for the regulation-detection algorithm %%%
 
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 % Make sure that you have adjusted any settings in the
 % regulation_detection_inputs file.  In particular, you may choose the
 % method you would like to run (linear or fourier).  You can also change

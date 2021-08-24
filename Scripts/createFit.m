@@ -1,3 +1,9 @@
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 function [fitresult, gof] = createFit(x, y, per, ffit_n, var_name)
 %  Create a fourier fit with prescribed fittype ft.
 %

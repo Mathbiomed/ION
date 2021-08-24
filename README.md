@@ -2,7 +2,11 @@
 
 This repository contains the MATLAB implementation and examples of the ION (Inferring Oscillatory Networks) package used in the article: 
 
-**Insert link to biorxiv article**
+https://doi.org/10.1101/2021.03.18.435997
+
+## License
+
+3-BSD Clause.  See the LICENSE file for more information.
 
 ## How to use
 

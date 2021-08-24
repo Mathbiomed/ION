@@ -1,3 +1,9 @@
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 function R = compute_R(data, rcolumn, scolumn, rvalue, t, rp_data, extrema)
 
 if(ismember(t, data(:,1)))

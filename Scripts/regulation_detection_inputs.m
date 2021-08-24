@@ -1,5 +1,11 @@
 % Regulation detection inputs
 
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 method = 'linear'; % User-specified method to run the analysis.  Can be 
 %                    either 'linear' or 'fourier'.  If 'linear', the method
 %                    interpolate the data using a linear interpolation.  If

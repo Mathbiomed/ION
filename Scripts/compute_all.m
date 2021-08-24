@@ -1,5 +1,11 @@
 %%%% Compute all times at which the data is equal to the value given %%%%
 
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 function [s_vals, sp_vals] = compute_all(data,r_value,rcolumn)
 
 % data input should be: column 1-time, column 2-r_data, column 3-s_data

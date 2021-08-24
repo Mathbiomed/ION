@@ -1,3 +1,9 @@
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 function L1g = compute_R_self_fourier(data, rcolumn, scolumn, svalue, t, f_der1, f_der2)
 
 % Compute r(t)

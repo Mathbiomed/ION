@@ -1,4 +1,10 @@
-%%% Plot R r - CFP, s - mCherry %%%
+%%% Plot R  %%%
+
+% Copyright (c) 2021, Jonathan P. Tyler
+% All rights reserved.
+
+% This source code is licensed under the BSD-style license found in the
+% LICENSE file in the root directory of this source tree. 
 
 function R_score = plot_reg_detect(rcolumn, scolumn, data, rp_data, extrema)
 
